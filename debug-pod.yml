@@ -9,14 +9,14 @@ metadata:
 spec:
   containers:
   - name: debug
-  image: debug
-  imagePullPolicy: Never
-  command:
-  - "sh"
-  - "-c"
-  args:
-  - |
-    while true
-    do
-      sleep 5
-    done
+    image: debug
+    imagePullPolicy: Never
+    command:
+    - "sh"
+    - "-c"
+    args:
+    - |
+      while true
+      do
+        sleep 5
+      done
