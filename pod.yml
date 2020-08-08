@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadate:
+  name: sample
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.17.2-alpine
+    vokumeMounts:
+    - name: storage
+      mount: /home/nginx
+  volumes:
+  - name: storage
+    hostPath:
+      path: /data/storage
+      type: Directory
